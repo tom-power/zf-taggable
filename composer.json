@@ -1,0 +1,43 @@
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com",
+    "repositories":
+            [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/tom-power/ZfcTwitterBootstrap"
+                },
+                {
+                    "type": "package",
+                    "package": {
+                        "name": "tom-power/zf-crud",
+                        "version": "dev-master",
+                        "source": {
+                            "url": "https://github.com/tom-power/zf-crud",
+                            "type": "git",
+                            "reference": "master"
+                        },
+                        "autoload": {
+                            "psr-0": {
+                                "ZfCrud": "src"
+                            }
+                        }
+                    }
+                }
+            ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.2.5",
+        "doctrine/doctrine-module": "0.7",
+        "doctrine/doctrine-orm-module": "0.7",
+        "mwillbanks/zfc-twitter-bootstrap": "@dev",
+        "dudapiotr/zftable": "2.0",
+        "tom-power/zf-crud": "dev-master"
+    }
+}
