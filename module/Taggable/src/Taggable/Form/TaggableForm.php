@@ -38,7 +38,7 @@ class TaggableForm extends AbstractZfCrudForm {
             'attributes' => array(
                 'type' => 'submit',
                 'value' => 'Add tag',
-                'id' => 'addtag',
+                'id' => 'addtags',
             ),
         ));
 
@@ -47,7 +47,7 @@ class TaggableForm extends AbstractZfCrudForm {
             'attributes' => array(
                 'type' => 'submit',
                 'value' => 'Remove tag',
-                'id' => 'removetag',
+                'id' => 'removetags',
             ),
         ));
 
